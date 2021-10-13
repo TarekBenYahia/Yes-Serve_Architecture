@@ -1,0 +1,15 @@
+ys_homepage:
+    path:     /
+    defaults: { _controller: YSBundle:Default:index }
+ys_contact:
+    path:     /contact
+    defaults: { _controller: YSBundle:Default:contact }
+ys_partenaires:
+    path:     /partenaires
+    defaults: { _controller: YSBundle:Default:partenaires }
+ys_mission:
+    path:     /missions
+    defaults: { _controller: YSBundle:Default:mission }
+ys_projets:
+    path:     /projets
+    defaults: { _controller: YSBundle:Default:projets }

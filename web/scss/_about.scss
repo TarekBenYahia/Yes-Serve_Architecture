@@ -1,0 +1,68 @@
+.about-area{
+    // left content
+    .about-caption{
+        @media #{$xs}{
+            margin-bottom: 35px;
+        }
+         p{
+            font-size: 16px;
+            color: #64676c;
+            line-height: 1.6;
+            margin-bottom: 40px;
+            padding-right: 50px;
+            @media #{$lg}{
+                padding-right: 20px;
+            }
+            @media #{$sm}{
+                padding-right: 0px;
+            }
+            @media #{$xs}{
+                padding-right: 0px;
+            }
+        }
+    }
+    // Right img
+    .about-img{
+        position: relative;
+        .about-font-img{
+            position: relative;
+            z-index: 1;
+            img{
+                @media #{$lg}{
+                    width: 90%;
+                }
+                @media #{$xs}{
+                    width: 100%;
+                }
+            }
+        }
+        
+        .about-back-img{
+            position: absolute;
+            z-index: -1;
+            right: 0;
+            top: 43px;
+
+            img{
+                @media #{$xs}{
+                    width: 90%;
+                }
+            }
+            @media #{$md}{
+                right: 147px;
+            }
+            @media #{$sm}{
+                display: none;
+            }
+            @media #{$xs}{
+                display: none;
+            }
+        }
+    }
+}
+.about-caption{
+    @media #{$xs}{
+        margin-bottom: 35px;
+    }
+	
+}

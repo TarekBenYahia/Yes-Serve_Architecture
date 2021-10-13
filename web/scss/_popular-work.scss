@@ -1,0 +1,48 @@
+.popular-work-area{
+    .single-cat{
+        @include transition(.4s);
+        position: relative;
+        z-index: 1;
+        img{
+            width: 100%;
+        }
+
+        // Hover Effect In single    
+         .img-cap {
+            position: absolute;
+            top: 100%;
+            width: 100%;
+            left: 0;
+            background: #fff;
+            @include transition(.4s);
+            padding: 10px 10px 10px 5px;
+            h4 {
+                font-weight: 700;
+                font-family: $font_1;
+                font-size: 26px;
+                color:#1d1d1d;
+                font-size: 16px;
+                margin-bottom: 0px;
+                display:block;
+               }
+            p{
+                font-size: 15px;
+                color: #686868;
+            }
+        }
+        &:hover{
+            .img-cap {
+                top: 90%;
+
+            }
+            .cat-icon{
+                i{
+                    color:#f81f1f;
+                }
+            }
+        }
+        &.single-cat2{
+            background: #f7fbff;
+        }
+    }
+}

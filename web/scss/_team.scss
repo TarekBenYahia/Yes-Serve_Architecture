@@ -1,0 +1,44 @@
+.single-team{
+    .team-img{
+        overflow: hidden;
+        margin-bottom: 19px;
+        img{
+            width: 100%;
+            transform:scale(1);
+            transition: all 0.6s ease-out 0s;
+        }
+    }
+    .team-caption{
+        span{
+            color: #959595;
+            font-size: 16px;
+            font-weight: 500;
+            font-family:$font_1;
+            display: block;
+            position: relative;
+            margin-left: 50px;
+            margin-bottom: 10px;
+            &::before {
+                position: absolute;
+                content: "";
+                width: 35px;
+                height: 2px;
+                left: -47px;
+                top: 50%;
+                transform: translateY(-50%);
+                background:$theme-color;
+            }
+        }
+        h3{
+           a{
+            color: #1d2434;
+            font-weight: 600;
+            font-size: 35px;
+           }
+        }
+    }
+}
+
+.single-team:hover .team-img img {
+	transform:scale(1.1);
+}

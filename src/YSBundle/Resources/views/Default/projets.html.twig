@@ -1,0 +1,113 @@
+{% extends 'base.html.twig' %}
+{% block partenaires %}
+    <main>
+        <!--? Hero Start -->
+        <div class="slider-area2">
+            <div class="slider-height2 d-flex align-items-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="hero-cap hero-cap2 pt-70 text-center">
+                                <h2>Nos Partenaires</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Hero End -->
+        <!--? Popular Work Start -->
+        <section class="popular-work-area section-padding30">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-6 col-lg-7 col-md-10 col-sm-10">
+                        <!-- Section Tittle -->
+                        <div class="section-tittle text-center mb-70">
+                            <span>Our recent work</span>
+                            <h2>Our best recent popular work here</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section-top-border">
+                    <h3>Image Gallery</h3>
+                    <div class="row gallery-item">
+                        <div class="col-md-4">
+                            <a href="{{ asset ('img/elements/g1.jpg') }}" class="img-pop-up">
+                                <div class="single-gallery-image" style="background: url({{ asset ('img/elements/g1.jpg') }});"></div>
+                            </a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="{{ asset ('img/elements/g2.jpg') }}" class="img-pop-up">
+                                <div class="single-gallery-image" style="background: url({{ asset ('img/elements/g2.jpg') }});"></div>
+                            </a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="{{ asset ('img/elements/g3.jpg') }}" class="img-pop-up">
+                                <div class="single-gallery-image" style="background: url({{ asset ('img/elements/g3.jpg') }});"></div>
+
+                            </a>
+                        </div>
+                        <div class="col-md-6">
+                            <a href="{{ asset ('img/elements/g4.jpg') }}" class="img-pop-up">
+                                <div class="single-gallery-image" style="background: url({{ asset ('img/elements/g4.jpg') }});"></div>
+                            </a>
+                        </div>
+                        <div class="col-md-6">
+                            <a href="{{ asset ('img/elements/g5.jpg') }}" class="img-pop-up">
+                                <div class="single-gallery-image" style="background: url({{ asset ('img/elements/g5.jpg') }});"></div>
+                            </a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="{{ asset ('img/elements/g6.jpg') }}" class="img-pop-up">
+                                <div class="single-gallery-image" style="background: url({{ asset ('img/elements/g6.jpg') }});"></div>
+                            </a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="{{ asset ('img/elements/g7.jpg') }}" class="img-pop-up">
+                                <div class="single-gallery-image" style="background: url({{ asset ('img/elements/g7.jpg') }});"></div>
+                            </a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="{{ asset ('img/elements/g8.jpg') }}" class="img-pop-up">
+                                <div class="single-gallery-image" style="background: url({{ asset ('img/elements/g8.jpg') }});"></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="browse-btn2 text-center mt-50">
+                            <a href="#" class="btn loadMore">Load more</a>
+                        </div>
+                        <script src="{{ asset ('js/jquery-latest.min.js') }}"></script>
+                        <script>
+                            $(".col-md-4").slice(0, 3).show(); //showing 3 div
+
+                            $(".loadMore").on("click",function(){
+                                $(".col-md-4:hidden").slice(0, 3).show(); //showing 3 hidden div on click
+
+                                if($(".col-md-4:hidden").length ==0)
+                                {
+                                    $(".loadMore").fadeOut(); //this will hide
+                                    //button when length is 0
+                                }
+                            })
+                        </script>
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Popular Work End -->
+    </main>
+{% endblock %}

@@ -1,0 +1,64 @@
+.experience-area{
+    margin-top: -176px;
+    background-image: url(../img/gallery/section_bg02.png);
+    position: relative;
+    z-index: 0;
+    height: 1000px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    @media #{$md}{
+        margin-top: -276px;
+    }
+    @media #{$sm}{
+        margin-top: -249px;
+        height: 800px;
+    }
+    @media #{$xs}{
+        margin-top: -363px;
+    }
+    .caption-overlay{
+        position: absolute;
+        content: "";
+        background-color: rgba(4,21,28,0.902);
+        width: 55%;
+        height: 60%;
+        left: 0;
+        bottom: 0;
+        z-index: 0;
+        background-repeat: no-repeat;
+        @media #{$md}{
+            width: 85%;
+        }
+        @media #{$sm}{
+            width: 100%;
+        }
+        @media #{$xs}{
+            width: 100%;
+            height: 56%;
+        }
+    }
+    .experience-caption{
+        padding-top: 120px;
+        padding-bottom: 120px;
+        position: relative;
+        z-index: 1;
+        h2 {
+            color: #fff;
+            font-size: 50px;
+            display: block;
+            font-weight: 800;
+            margin-bottom: 30px;
+            @media #{$sm}{
+                font-size: 31px;
+            }
+            @media #{$xs}{
+                font-size: 27px;
+            }
+        }
+        p{
+            color: #fff;
+            margin-bottom: 47px;
+        }
+    }
+}
+
